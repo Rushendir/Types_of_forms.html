@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Types of Forms</title>
+</head>
+<body>
+    <h3 id="topofpage">Types of Forms</h3>
+    <form method="post">
+        <table border="0" width="700" height="300" cellspacing="0" cellpadding="4" bgcolor="lightgrey">
+            <th align="center" colspan="2"><h2>Exam Registration</h2></th>
+            <tr>
+                <td width="50%" align="right"> Title:</td>
+                <td width="50%" align="left"> <select name="SlTitle">
+                        <option value="select_an_option">select an option</option>
+                        <option value="Physics">Physics</option>
+                        <option value="Chemistry">Chemistry</option>
+                        <option value="Maths">Maths</option>
+                        <option value="Social">Social</option></select>
+                 </td>
+            </tr>
+            <tr>
+                <td width="100%" align="right"> FullName:</td>
+                <td width="50%" align="left"><input type="text" name="FLtxtName" placeholder="FullName" size="35" required>
+                </td>
+            </tr>
+            <tr>
+                <td width="50%" align="right">
+                   MiddleInitial: <br>(optional)
+                </td>
+                <td width="50%" align="left"> <input type="text" name="MNtxtName" placeholder="MiddleName" size="30" required></td>
+            </tr>
+            <tr>
+                <td width="50%" align="right">LastName:</td>
+                <td width="50%" align="left"><input type="text" name="LNtxtName" placeholder="LastName" size="30" required></td>
+            </tr>
+            <tr>
+                <td width="50%" align="right"> Country:</td>
+                <td width="50%" align="left"> <select name="SlCountry">
+                        <option value="select_an_option">select an option</option>
+                        <option value="America">America</option>
+                        <option value="China">China</option>
+                        <option value="India">India</option>
+                        <option value="Malasiya">Malasiya</option></select>
+                 </td>
+            </tr>
+            <tr>
+                <td width="50%" align="right">Email:</td>
+                <td width="50%" align="left"><input type="email" name="emlemail" size="30" placeholder="e-mail" required></td>
+            </tr>
+            <tr>
+                <td width="50%" align="right">Confirm Email:</td>
+                <td width="50%" align="left"><input type="email" name="emlemail" size="30" placeholder="e-mail" required></td>
+            </tr>
+            <tr>
+                <td width="50%" align="right">Password:</td>
+                <td width="50%" align="left"><input type="password" name="pwdpassword" size="30" placeholder="password" minlength="8" required><br><b>Password strenth:
+                </b>To Short<br>-----------</td>
+            </tr>
+
+            <tr>
+                <td width="50%" align="right">Confirm Password: </td>
+                <td width="50%" align="left"><input type="password" name="pwdpassword" size="30" placeholder="password" minlength="8" required ></td>
+            </tr>
+            <tr>
+                 <td width="100%" align="center" bgcolor="green" colspan="2">
+                     <input type="submit" name="sbtsubmit" value="Continue to Exam Registration" required>
+                 </td>
+            </tr>
+        </table></form><br>
+        <h3><a href="#topofpage">Go to top</a></h3>
+        <!--Exam Registration Form is close and Dropdown form is open-->
+
+        <form method="post">
+            <table border="0" width="700" height="300" cellspacing="0" cellpadding="4" bgcolor="silver">
+                <th width="100%" colspan="2" align="center"><h2>Dropdown Form</h2></th>
+                <tr><td width="100%" colspan="2" align="center"><h4>Browser Demographics Survey</h4></td></tr>
+             <tr>
+                <td width="50%" align="center">As which gender<br>do you identify? <br><br>
+                        <select name="Slgender">
+                        <option value="Gender">Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Others">Others</option></select>
+                 </td>
+                 <td width="50%" align="center">To which age group<br>do you belong?<br><br>
+                            <select name="Slagegroup">
+                            <option value="Age_Group">Age Group</option>
+                            <option value="18=25">18-25</option>
+                            <option value="25=35">25-35</option>
+                            <option value="35-45">35-45</option>
+                            <option value="45-55">45-55</option></select>
+                     </td> 
+                 </tr>
+                <tr>
+                    <td width="50%" align="center">In which geographic <br>region do you live?<br><br>
+                        <select name="Slregion">
+                        <option value="Region">Region</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Andhra_Pradesh">Andhra Pradesh</option>
+                        <option value="Tamil_Nadu">Tamil Nadu</option></select></td>
+                  <td width="50%" align="center">Which Internet web <br>browsers do you use?<br><br>
+                    <select name="SlwebBrowsers" multiple>
+                    <option value="Select_Your_Browsers">Select Your browsers</option>
+                    <option value="Google_Chrome">Google Chrome</option>
+                    <option value="Microsoft_Edge">Microsoft Edge</option>
+                    <option value="Internet_Explorer">Internet Explorer</option>
+                    <option value="Mozilla_Firefox">Mozilla Firefox</option>
+                    <option value="Epic">Epic</option>
+                    <option value="Vivaldi">Vivaldi</option>
+                    <option value="Apple_saffari">Apple saffari</option>
+                    <option value="Operamini">Operamini</option>
+                    <option value="Brave">Brave</option></select></td> 
+             </tr>
+             <tr>
+                <td width="50%" align="center" bgcolor="pink"><input type="submit" name="sbtsubmit" value="submit" required></td>
+                <td width="50%" align="center" bgcolor="lightgreen"><input type="reset" name="reset" value="Reset" required></td>
+            </tr>
+            </table></form><br>
+            <h3><a href="#topofpage">Go to top</a></h3>
+            <!--Dropdown Form is close and Payment form is open-->
+
+            <form method="post"> 
+                <table border="0" width="700" height="300" cellspacing="0" cellpadding="4" bgcolor="lightblue">
+                    <th width="100%" colspan="2" align="center"><h2>Payment Form</h2></th>
+                     <tr>
+                         <td width="100%" align="left" colspan="2"><h3>Contact Details</h3></td>
+                     </tr>
+                     <tr>
+                         <td width="50%" align="left"><input type="text" name="txtname" placeholder="fullName" size="25" required></td>
+                         <td width="50%" align="left"><input type="text" name="txtname" placeholder="LastName" size="25" required></td>
+                     </tr>
+                     <tr><td width="100%" align="left" colspan="2"> <textarea name="txtAddress" rows="10" cols="35" placeholder="Address--" required></textarea></td></tr>
+                     <tr>
+                        <td width="50%" align="left"><input type="text" name="txttown" placeholder="Town" size="25" required></td>
+                        <td width="50%" align="left"><input type="number" name="nmbpostcode" placeholder="Post_code" size="25" required></td>
+                    </tr>
+                    <tr>
+                        <td width="50%" align="left"><input type="email" name="emlemail" placeholder="Email" size="25" minlength="10" required></td>
+                        <td width="50%" align="left"><input type="email" name="emlemail" placeholder="Confirm_Email" size="25" required></td>
+                    </tr>
+                    <tr><td width="100%" align="left" colspan="2"><h3>Payment Details</h3></td></tr>
+                    <tr>
+                        <td width="100%" align="left" colspan="2"> <input type="text" name="txtcardname" size="25" minlength="25" placeholder="Cardholder_Name"></td>
+                    </tr>
+                    <tr>
+                     <td width="100%" align="left" colspan="2"> <input type="number" name="nmbcardnumber" size="25" minlength="10" placeholder="Card_Number" required></td>
+                    </tr>
+                    <tr>
+                        <td width="50%" align="left"> Expiry: <input type="month" name="mnMonth" placeholder="Month" size="25" required></td>
+                        <td width="50%" align="left"> <input type="number" name="nmbNumber" placeholder="CVV" size="25" required></td>
+                    </tr>
+                    <tr>
+                       <td width="50%" align="left" bgcolor="orange"> <h3>Payment Amount:</h3><input type="number" name="nmbNumber" placeholder="$5,0000" size="25" readonly></td> 
+                       <td width="50%" align="left" bgcolor="orange"> <input type="image" src="./button_images/download.png"></td>
+                    </tr>
+                    <tr>
+                        <td width="100%" align="left" colspan="2" style="color: brown;"><input type="checkbox" name="chkaccept" value="Accept" required> <i>I/We agree to the terms and conditions for this part payment as set out here.</i></td>
+                   </tr>
+                   <tr><td width="100%" align="center" bgcolor="lightgreen" colspan="2"><h3><input type="submit" name="sbtsubmit" value="Confirm_Payment" size="25" required>
+                   </h3></td></tr>
+        </table></form><br>
+        <h3><a href="#topofpage">Go to top</a></h3>
+        <!--Payment Form is close and complaint form is open-->
+
+         <form method="post">
+            <table border="0" width="700" height="300" cellspacing="0" cellpadding="4" bgcolor="lightgreen">
+                <th width="100%" align="center" colspan="4" bgcolor="lightblue"><h2>Customer complaint Form</h2></th>
+                <tr> <td width="100%" align="left" colspan="4"> <h3>complaint's Name</h3></td></tr>   
+                <tr>
+                    <td width="50%" align="left"><input type="text" name="txtname" placeholder="firstName" size="25" required></td>
+                    <td width="50%" align="center" colspan="3"><input type="text" name="txtname" placeholder="lastName" size="25" required></td>
+                </tr>
+                <tr><td width="100%" align="left" colspan="4"> <h3>Date of complaint</h3></td></tr>   
+                <tr><td width="100%" align="left" colspan="4"><input type="date" name="dtdate" placeholder="Date_Of_complaint" size="25" required></td></tr>
+                <tr><td width="100%" align="left" colspan="4"> <h3>Time of Complaint</h3></td></tr>
+                <tr>
+                    <td width="33%" align="left"> <input type="number" name="nmNumber" size="25" required> <br>Hour </td>
+                    <td width="33%" align="left"> <input type="number" name="nmNumber" size="25" required> <br>Minutes</td>
+                    <td width="33%" align="center" colspan="2"><select name="slperiod"><option value="AM">AM</option> <br> <option value="PM">PM</option></select></td>
+                </tr>
+                <tr><td width="100%" align="left" colspan="4"><h3>Complaint's Address</h3></td></tr>
+                <tr>
+                    <td width="50%" align="left"><textarea name="Address" rows="10" cols="30" placeholder="enter_your_Address" required></textarea> <br> <h4>Address line 1
+                    </h4></td>
+                    <td width="50%" align="center" colspan="3"> <textarea name="Address" rows="10" cols="30" placeholder="enter_your_Address" required></textarea> <br> <h4>Address line 2</h4></td>
+                </tr>
+                <tr>
+                    <td width="33%" align="left"> <input type="text" name="txtcity" placeholder="city" value="city"  size="25" required></td>
+                    <td width="33%" align="left"> <input type="text" name="txtnstate" placeholder="state/province" size="25" required></td>
+                    <td width="33%" align="center" colspan="2"> <input type="number" name="txtzipcode" placeholder="postal/zipcode" size="25" required></td>
+                </tr>
+                <tr><td width="100%" align="left" colspan="4"> <h3>Complaint's Phone Number</h3></td></tr>
+                <tr>
+                    <td width="50%" align="left"><input type="number" name="nmbNumber" placeholder="AreaCode" size="25" required> <br>Area Code</td>
+                    <td width="50%" align="center" colspan="3">Phone Number <br><input type="number" name="nmbPhoneno" placeholder="Phone_Number" size="25" required></td>
+                </tr>
+                <tr>
+                    <td width="50%" align="left" Valign="middle"> Email: <br><br> <input type="email" name="emlemail" placeholder="example@example.com" size="25" required></td>
+                    <td width="50%" align="center" colspan="3">Place where incident took place <br><textarea name="place" rows="10" cols="30" placeholder="enter_your_place" required></textarea></td>
+                </tr>
+                <tr>
+                    <td width="25%" align="left">
+                        <input type="text" name="txtproductname" placeholder="product_name" size="25" required>
+                    </td>
+                    <td width="25%" align="left">
+                        <input type="text" name="txtpacksize" placeholder="pack_size" size="25" required>
+                    </td>
+                    <td width="25%" align="left">
+                        <input type="text" name="txtBatchno" placeholder="Batch_No" size="25" required>
+                    </td>
+                    <td width="25%" align="left">
+                        <input type="text" name="txtquantity" placeholder="Quantity_Affected" size="25" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="33%" align="left">Expiry Date: <br><input type="date" name="dtdate" size="25" placeholder="Expiry_Date" required></td>
+                    <td width="33%" align="left"> Date of Purchase: <br> <input type="date" name="dtpurchase" placeholder="Date-Of-Purchase" size="25" required> </td>
+                    <td width="33%" align="center" colspan="2"> Is a food sample available? <br><input type="radio" name="rdfoodsample" value="Yes">Yes <br>
+                    <input type="radio" name="rdfoodsample" value="No">No</td>
+                 </tr>
+                 <tr>
+                     <td width="50%" align="left" Valign="top"> <h3>Proof of purchase <br>(if applicable)</h3><br><input type="file" name="flupload" accept="image/*"></td>
+                     <td width="50%" align="left" colspan="3"> <h3> Types of Complaint:</h3><br>
+                        <input type="checkbox" name="chkComplaint" value="Foodborne_illness" required>Foodborne illness <br>
+                        <input type="checkbox" name="chkComplaint" value="Food-Related_injury">Food Related injury <br>
+                        <input type="checkbox" name="chkComplaint" value="Product_theft">Product theft <br>
+                        <input type="checkbox" name="chkComplaint" value="Personal_isues">personal isues <br>
+                    </td> 
+                 </tr>
+                 <tr><td width="100%" align="center" colspan="4" bgcolor="green"> <input type="submit" name="sbsubmit" size="25" required></td></tr>
+            </table></form><br>
+            <h3><a href="#topofpage">Go to top</a></h3>
+            <!--complaint Form is close and Newsletter subscribtion form is open-->
+
+            <form method="post">
+            <table border="0" width="700" height="300" cellspacing="0" cellpadding="4" bgcolor="pink">
+                <th width="100%" align="center"><h2>Newsletter subscription Form</h2></th>
+                    <tr><td width="100%" align="left"> Name:*<br><input type="text" name="txtName" placeholder="fullname" size="25" required></td></tr>
+                    <tr><td width="100%" align="left"> Organization:<br><input type="text" name="txOrganization" placeholder="Organization" size="25" required></td></tr>
+                    <tr><td width="100%" align="left"> Email:<br><input type="email" name="emlemail" placeholder="Email" size="25" required></td></tr>
+                    <tr><td width="100%" align="left"> Password:<br><input type="password" name="pwdpassword" placeholder="enter_your_password" minlength="8" size="25" required></td></tr>
+                    <tr><td width="100%" align="left"> Password:<br><input type="password" name="pwdpassword" placeholder="Confirm_password" minlength="8" size="25" required></td></tr>
+                    <tr><td width="100%" align="left">Enter your Comments:<br><textarea name="Comments"rows="10" cols="40" placeholder="Enter_your_comments" required></textarea></td></tr>
+                    <tr></tr>
+                    <tr><td width="100%" align="center" bgcolor="green"> <input type="submit" name="sbtsubmit" value="Subscribe" required></td></tr>
+            </table></form><br>
+            <h3><a href="#topofpage">Go to top</a></h3>
+            <!--Newsletter subscription Form is close and Funding Request form is open-->
+
+            <form method="post">
+            <table border="0" width="700" height="300" cellspacing="0" cellpadding="4" bgcolor="gray">
+            <th width="100%" align="center" colspan="2" bgcolor="lightblue"><h2>Funding Request form</h2></th>
+                <tr>
+                    <td width="50%" align="left"> Name of club/Organization:<br><input type="text" name="txtName" placeholder="fullname" size="25" required></td>
+                    <td width="50%" align="left"> Budget Account Code:<br><input type="number" name="nmbcode" placeholder="budget_account_code" size="25" required></td>
+                </tr>
+                <tr>
+                    <td width="50%" align="left"> Date Request Submitted:<br><input type="number" name="nmbRequest" placeholder="Request_Date_Submit" size="25" required></td>
+                    <td width="50%" align="left"> Number of Active Hawkeye Credit students <br> in your club/organization:<br><input type="number" name="nmbno_Ofactive_students" placeholder="credit_students" size="25" required></td>
+                </tr>
+                <tr>
+                    <td width="100%" align="left" colspan="2"> Does Your Club/Organization have an Up-to-Date <br>Constitution on File with Student Life? <br> <textarea name="File_with_student_life"rows="10" cols="25" placeholder="Enter_your_message" required></textarea></td>
+                </tr>
+                <tr>
+                    <td width="50%" align="left">Contact Person:<br><input type="text" name="txtcontact_person" placeholder="Contact_Person" size="25" required></td>
+                    <td width="50%" align="left">Position:<br><input type="text" name="txtPosition" placeholder="Position" size="25" required></td>
+                </tr>
+                 <tr>
+                    <td width="50%" align="left">Phone Number:<br><input type="number" name="nmbPhone" placeholder="Phone_Number" size="25" required></td>
+                    <td width="50%" align="left">Email:<br><input type="email" name="emlemail" placeholder="Email" size="25" required></td>
+                </tr>
+                <tr>
+                    <td width="50%" align="left">Advisor:<br><input type="text" name="txtAdvisor" placeholder="Advisor" size="25" required></td>
+                     <td width="50%" align="left">Office Location:<br><input type="text" name="txtlocation" placeholder="Office_Location" size="25" required></td>
+                </tr>
+                 <tr>
+                    <td width="50%" align="left">Phone Number:<br><input type="number" name="nmbPhone" placeholder="Phone_Number" size="25" required></td>
+                    <td width="50%" align="left">Email:<br><input type="email" name="emlemail" placeholder="Email" size="25" required></td>
+                 </tr>
+                <tr>
+                     <td width="50%" align="left">Activity/EventName:<br><input type="text" name="txtEventName" placeholder="Activity_EventName" size="25" required></td>
+                     <td width="50%" align="left">Activity/EventDate:<br><input type="date" name="dtDate" placeholder="Activity_EventDate" size="25" required></td>
+                </tr>
+                <tr>
+                    <td width="100%" align="left" colspan="2"> General Description of Activity/Event: <br><br></td>
+                </tr>
+                <tr>
+                    <td width="50%" align="left">Location:<br><input type="text" name="txtLocation" placeholder="Location" size="25" required></td>
+                    <td width="50%" align="left">Co-Sponsor<br>(If any):<br><input type="text" name="txtSponsor" placeholder="Co-Sponsor" size="25" required></td>
+                </tr>
+                <tr>
+                    <td width="100%" align="left" colspan="2"> What is the educational benefit of this activity/event.<br><br></td> 
+                </tr>
+                <tr>
+                    <td width="100%" align="center" colspan="2" bgcolor="green"><input type="submit" name="sbtsubmit" required></td>
+                </tr>
+            </table></form><br>
+            <h3><a href="#topofpage">Go to top</a></h3>
+            <!--Funding Request Form is close and Leave form is open-->
+
+            <form method="post">
+            <table border="0" width="700" height="300" cellspacing="0" cellpadding="4" bgcolor="lightblue">
+            <th width="100%" colspan="2" align="center" bgcolor="pink"><h2>Leave form</h2></th>
+                <tr><td width="100%" colspan="2" align="center"> <h3>Leave Request Form</h3></td></tr>
+                <tr><td width="100%" colspan="2" align="left"> <input type="date" name="dtDate" size="25" required></td></tr>
+                 <tr>
+                    <td width="50%" align="left">Employee Name:<br><input type="text" name="txtname" placeholder="fullName" size="25" required></td>
+                    <td width="50%" align="left">Department:<br><input type="text" name="txtDepartment" placeholder="Department" size="25" required></td>
+                </tr>
+                <tr>
+                    <td width="100%" align="left" colspan="2" bgcolor="lightblue">
+                        Reason For Requested Leave :(Plese Tick the Appropriate box) <br>
+                        <input type="checkbox" name="chkReason" value="Annual_Leave" required> Annual Leave
+                        <input type="checkbox" name="chkReason" value="Bereavement" required>Bereavement
+                        <input type="checkbox" name="chkReason" value="Maternity_Leave" required>Maternity Leave<br>
+                        <input type="checkbox" name="chkReason" value="Sick_Leave" required>Sick Leave
+                        <input type="checkbox" name="chkReason" value="unpaid_Leave" required> Unpaid Leave
+                        <input type="checkbox" name="chkReason" value="Parental_Leave" required> Parental Leave<br>
+                        <input type="checkbox" name="chkReason" value="Others" required>others______________
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" align="left" colspan="2"> <h3>Date Requested:</h3> from: <input type="date" name="dtDate" size="25" required> to: <input type="date" name="dtDate" size="25" required></td>
+                </tr>
+                <tr>
+                    <td width="50%" align="left"><h3>Employee's Signature:_______________</h3></td>
+                    <td width="50%" align="left"> <h3>Manager/Supervisor Approval:</h3><br>
+                        <input type="checkbox" name="chkapproval" value="Approved" required>Approved
+                        <input type="checkbox" name="chkapproval" value="Rejected" required>Rejected
+                    </td>
+                </tr>
+                <tr><td width="100%" align="left" colspan="2">Notes/Commens: <br><textarea name="Comments"rows="10" cols="30" placeholder="Enter_your_Notes_Comments" required></textarea></td></tr>
+                <tr><td width="100%" align="center" colspan="2" bgcolor="green"><input type="submit" name="sbtsubmit" required></td></tr>
+            </table></form><br>
+            <h3><a href="#topofpage">Go to top</a></h3>
+            <!--Leave Form is close and Job form is open-->
+
+                <form method="post">
+                <table border="0" width="700" height="300" cellspacing="0" cellpadding="4" bgcolor="lightgrey">
+                <th width="100%" colspan="2" align="center" bgcolor="lightblue"><h2>Job Form</h2></th>
+                <tr><td width="100%" align="center" colspan="2"><h3>Job Application Form with Resume upload</h3></td></tr>
+                <tr>
+                    <td width="50%" align="left">Full Name:* <br><input type="text" name="txtname" placeholder="fullName" size="25" required></td>
+                    <td width="50%" align="left">Last Name:* <br><input type="text" name="txtname" placeholder="LastName" size="25" required></td>
+                </tr>
+                <tr>
+                    <td width="50%" align="left">Email:<br><input type="email" name="emlemail" placeholder="Email" size="25" required></td>
+                    <td width="50%" align="left">Phone Number:<br><input type="number" name="nmbPhone" placeholder="Phone_Number" size="25" required></td>
+                </tr>
+                <tr><td width="100%" align="left" colspan="2"><h3>Position</h3></td></tr>
+                <tr>
+                    <td width="50%" align="left">Position You are applying for:<br><input type="text" name="txtPosition" placeholder="fullName" size="25" required></td>
+                    <td width="50%" align="left">Resume Upload: <br> <input type="file" name="Rsflupload" accept=".pdf, .doc, ,docx" required> </td>
+                </tr> 
+                <tr>
+                    <td width="50%" align="left">Portfolio Website:* <br><input type="text" name="txtWebsite" placeholder="Portfolio_Website" size="25" required></td>
+                    <td width="50%" align="left">Salary Requirements:* <br><input type="text" name="txtSalary" placeholder="Salary_Requirements" size="25" required></td>
+                </tr>
+                <tr>
+                    <td width="50%" align="left">When can You Start? <br><input type="text" name="txtWebsite" placeholder="WhenCan_YouStart" size="25" required></td>
+                    <td width="50%" align="left">Are you willing to relocate? <br>
+                        <input type="radio" name="rdRelocate" value="Yes">Yes<br>
+                        <input type="radio" name="rdRelocate" value="No">No<br>
+                        <input type="radio" name="rdRelocate" value="Not_Sure">Not Sure</td> 
+                </tr>
+                <tr>
+                    <td width="50%" align="left">Last Company you Worked For <br> <input type="text" name="txtworked" placeholder="Last_worked" size="25" required></td>
+                    <td width="50%" align="left">Comments <br> <textarea name="Comments" rows="10" cols="30" placeholder="enter_Your_Comments" required></textarea></td>
+                </tr>
+                <tr><td width="100%" align="center" colspan="2" bgcolor="green"><input type="submit" name="sbtsubmit" required></td></tr>
+            </table></form><br>
+            <h3><a href="#topofpage">Go to top</a></h3>
+            <!--Job Form is close and Sales Order form is open-->
+
+                <form method="post">
+                <table border="0" width="700" height="300" cellspacing="0" cellpadding="4" bgcolor="silver">
+                    <th width="100%" colspan="3" align="center" bgcolor="lightblue"><h2>Sales Order Form</h2></th>
+                    <tr><td width="100%" align="left" colspan="3" style="color: coral;"><i><h1>+Children's Hospital</h1></i></td></tr>
+                    <tr>
+                        <td width="33%" align="left"><input type="number" name="nmborder_no" placeholder="Order_Number" size="25" required></td>
+                        <td width="33%" align="left" style="color: blue;">Sales Order Form</td>
+                        <td width="33%" align="left"><input type="date" name="dtDate" placeholder="Order_Date" size="25" required></td>
+                    </tr>
+                    <tr><td width="100%" align="left" colspan="3"> Email Address: <br><input type="email" name="emlemail" placeholder="Email" size="25" required></td></tr>
+                    <tr><td width="100%" align="left" colspan="3"><h3>Client Information</h3></td></tr>
+                    <tr>
+                        <td width="33%" align="left">Full Name: <br><input type="text" name="txtName" placeholder="FullName" size="25" required></td>
+                        <td width="33%" align="left"> Email:<br><input type="email" name="emlemail" placeholder="Email" size="25" required></td>
+                        <td width="33%" align="left"> Email:<br><input type="number" name="nmbNumber" placeholder="Phone_Number" minlength="10" size="25" required></td>
+                    </tr>
+                    <tr>
+                        <td width="100%" align="left" colspan="3"> Shiping to my billing address: <br> 
+                            <input type="checkbox" name="chkbillingaddress" value="Yes">Yes <br>
+                            <input type="checkbox" name="chkbillingaddress" value="No">No</td>
+                    </tr>
+                    <tr><td width="100%" align="left" colspan="3"><h3>Billing Address</h3></td></tr>
+                    <tr><td width="100%" align="left" colspan="3">Street Address: <br><textarea name="Address" rows="10" cols="30" placeholder="Enter_Street_Address" required></textarea></td></tr>
+                    <tr>
+                        <td width="33%" align="left">City: <br><input type="text" name="txtCity" placeholder="City" size="25" required></td>
+                        <td width="33%" align="left">State:<br>
+                            <select name="SlState">
+                            <option value="Select_Your_otion">Select Your option</option>
+                            <option value="TamilNadu">TamilNadu</option>
+                            <option value="Andhra_Pradesh">Andhra Pradesh</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Madhya_Pradesh">Madhya Pradesh</option>
+                            <option value="Karnataka">Karnataka</option>
+                        </select></td>
+                        <td width="33%" align="left"> Zip Code:<br><input type="number" name="nmbNumber" placeholder="ZipCode" size="25" required></td>
+                    </tr>
+                    <tr><td width="100%" align="left" colspan="3"><h3>Shipping Address</h3></td></tr>
+                    <tr><td width="100%" align="left" colspan="3">Street Address:<br> <textarea name="Address" rows="10" cols="30" placeholder="Enter_Street_Address" required></textarea></td></tr>
+                    <tr>
+                        <td width="33%" align="left">City: <br><input type="text" name="txtCity" placeholder="City" size="25" required></td>
+                        <td width="33%" align="left">State:<br>
+                            <select name="SlState">
+                            <option value="Select_Your_otion">Select Your option</option>
+                            <option value="TamilNadu">TamilNadu</option>
+                            <option value="Andhra_Pradesh">Andhra Pradesh</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Madhya_Pradesh">Madhya Pradesh</option>
+                            <option value="Karnataka">Karnataka</option>
+                        </select></td>
+                        <td width="33%" align="left"> Zip Code:<br><input type="number" name="nmbNumber" placeholder="ZipCode" size="25" required></td>
+                    </tr>
+                    <tr><td width="100%" align="left" colspan="3"><h3>Order Details</h3></td></tr>
+                    <tr>
+                        <td width="50%" align="left" style="color: brown;"> +Item No: <br><input type="number" name="nmbitemnumber" placeholder="Item_Number" size="25" required></td>
+                        <td width="50%" align="left" colspan="2" style="color: darkred;">Item Name: <br><input type="text" name="txtitemName" size="25" placeholder="Item_Name" required></td>
+                    </tr>
+                    <tr>
+                        <td width="50%" align="left" style="color: darkred;">Quantity:<br><input type="text" name="txtQuantity" size="25" placeholder="Quantity" required></td>
+                        <td width="50%" align="left" colspan="2" style="color: darkred;">Unit Price:<br><input type="number" name="nmbprice" size="25" placeholder="Unit_Price" required></td>
+                    </tr>
+                    <tr>
+                        <td width="50%" align="left" style="color: darkred;">Sub Total:<br><input type="number" name="nmbSubtotal" size="25" placeholder="SubTotal" required></td>
+                        <td width="50%" align="left" colspan="2" style="color: darkred;">Grand Total:<br><input type="number" name="nmbGrandTotal" size="25" placeholder="Grand_Total" value="$" required></td>
+                    </tr>
+                    <tr>
+                        <td width="100%" align="left" colspan="3" bgcolor="yellow"> Please Sign Here: <br> <input type="text" name="txtsign" placeholder="signature" size="25" required></td>
+                    </tr>
+                    <tr><td width="100%" colspan="3" align="center" bgcolor="green"><input type="submit" name="sbtsubmit" value="Send_To_Manager" size="25" required>
+                    </td></tr>
+                    <tr><td width="100%" colspan="3" align="center" bgcolor="lightgreen"><input type="reset" name="rscancel" value="Cancel_Order" size="20" required>
+                    </td></tr>
+                    </table></form><br>
+                    <h3><a href="#topofpage">Go to top</a></h3>
+                    <!--Sales Order Form is close and  Delivery form is opened New page-->
+        </body>
+        </html>

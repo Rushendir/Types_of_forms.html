@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create form types</title>
+</head>
+<body>
+    <h3 id="topofpage">Create form types</h3>
+    <form method="post">
+        <table border="0" width="700" height="300" cellspacing="0" cellpadding="4" bgcolor="silver">
+        <th width="100%" colspan="2" align="center" bgcolor="lightblue"><h2>Check-out Form</h2></th>
+        <tr><td width="100%" align="left" colspan="2" bgcolor="lightblue"><h3>Your Cart</h3></td></tr>
+        <tr>
+            <td width="50%" align="left"> Product Name:<br>(Brief Description)<br><br><input type="text" name="txtproductname" placeholder="product_name" size="25" required>
+            </td>
+            <td width="50%" align="left"> second Product: <br>(Brief Description)<br><br><input type="text" name="txtproductname" placeholder="product_name" size="25" required>
+            </td>
+        </tr>
+        <tr>
+            <td width="50%" align="left"> Third Item:<br>(Brief Description)<br><input type="text" name="txtproductname" placeholder="product_name" size="25" required>
+            </td>
+            <td width="50%" align="left"> Promo code: <br><br><input type="number" name="nmbcode" placeholder="promocode" size="25" required></td>
+        </tr>
+        <tr>
+            <td width="100%" align="left" colspan="2"> Total(USD):<input type="number" name="nmbTotal" placeholder="Total-USD" size="25" required></td>
+        </tr>
+        <tr><td width="100%" align="left" colspan="2" bgcolor="lightblue" style="color: crimson;"><h3>Billing Address</h3></td></tr>
+        <tr>
+            <td width="50%" align="left"> First Name: <br><br><input type="text" name="FntxtName" placeholder="FullName" size="25" required></td><br>
+            <td width="50%" align="left"> Last Name: <br><br><input type="text" name="LntxtName" placeholder="LastName" size="25" required></td>
+        </tr>
+        <tr>
+            <td width="50%" align="left"> User Name: <br><br><input type="text" name="FntxtName" placeholder="UserName" size="25" required></td>
+            <td width="50%" align="left"> Email: <br><br><input type="email" name="emlemail" placeholder="You@example.com" size="25" required></td>
+         </tr>
+         <tr>
+            <td width="50%" align="left"> Address: <br><br><textarea name="Address" rows="10" cols="30" placeholder="Enter_the_Address" required></textarea></td> 
+            <td width="50%" align="left"> Address: <br><br><textarea name="Address" rows="10" cols="30" placeholder="Enter_the_Address" required></textarea></td> 
+         </tr>
+         <tr>
+            <td width="50%" align="left"><h4>Address Line 1</h4></td>
+            <td width="50%" align="left"><h4>Address Line 2</h4></td>
+        </tr>
+        <tr>
+            <td width="50%" align="left"> Country: <br><br>
+                <select name="SlCountry">
+                    <option value="Select_Your_otion">Select Your option</option>
+                    <option value="India">India</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="China">China</option>
+                    <option value="America">America</option>
+                    <option value="Malasiya">Malasiya</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Others">Others</option>
+                </select></td>
+                <td width="50%" align="left">State:<br>
+                    <select name="SlState">
+                    <option value="Select_Your_otion">Select Your option</option>
+                    <option value="TamilNadu">TamilNadu</option>
+                    <option value="Andhra_Pradesh">Andhra Pradesh</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya_Pradesh">Madhya Pradesh</option>
+                    <option value="Karnataka">Karnataka</option>
+            </select></td></tr>
+         <tr><td width="100%" align="left" colspan="2"> postal/Zipcode:<input type="number" name="nmbcode" placeholder="postal_Zipcode" size="25" required></td></tr>
+         <tr>
+             <td width="50%" align="left">
+                  <input type="checkbox" name="chkReason" value="Shipping_Address" required> Shipping Address is the same as my billing Address.<br>
+                  <input type="checkbox" name="chkReason" value="Save_information" required>Save this Information for next time.</td>
+             <td width="50%" align="left"> <h3>Payment:</h3>
+                    <input type="radio" name="rdpayment" value="Credit_Card">Credit Card<br>
+                    <input type="radio" name="rdpayment" value="Debit_Card">Debit Card<br>
+                    <input type="radio" name="rdpayment" value="Pay_Pal">Pay Pal</td>
+          </tr>
+          <tr>
+              <td width="50%" align="left"> Name On Card: <br><br><input type="text" name="txtcard_holder_name" placeholder="Card_holder_Name" size="25" required></td>
+              <td width="50%" align="left"> Credit Card Number: <br><br><input type="password" name="pwdCard_Number" placeholder="Card_HHolder_Number" size="25" minlength="12" required></td>
+          </tr>
+          <tr>
+            <td width="50%" align="left"> Expiration Date:<br><input type="Date" name="dtDate" placeholder="Date_of_Expiry" size="25" required></td>
+            <td width="50%" align="left"> CVV: <br><input type="password" name="pwdverification" placeholder="CVV" size="25" minlength="5" required></td>
+          </tr>
+          <tr><td width="100%" align="center" colspan="2" bgcolor="blue"><input type="Submit" name="sbtsubmit" value="Continue_to_Checkout" size="35" required></td></tr>
+        </table></form><br>
+        <h3><a href="#topofpage">Go to top</a></h3>
+        <!--Check-out Form is close and Deposit Form is open-->
+
+        <form method="post">
+            <table border="0" width="700" height="300" cellspacing="0" cellpadding="4" bgcolor="lightgrey">
+            <th width="100%" align="center" bgcolor="lightblue"><h2>Deposit Form</h2></th>
+            <tr><td width="100%" align="center" bgcolor="lightblue" style="color: maroon;"><h3>Bank Deposit Form</h3></td></tr>
+            <tr><td width="100%" align="left"> First Name: <br><br><input type="text" name="FntxtName" placeholder="FullName" size="25" required></td></tr>
+            <tr><td width="100%" align="left"> Last Name: <br><br><input type="text" name="LntxtName" placeholder="LastName" size="25" required></td></tr>
+            <tr><td width="100%" align="left">Password: <br><br><input type="password" name="pwdpassword" size="30" placeholder="password" minlength="8" required></td></tr>
+            <tr><td width="100%" align="left">Account Number: <br><br><input type="password" name="pwdAccount_Number" size="30" placeholder="Account_Number" minlength="12" required></td></tr>
+            <tr><td width="100%" align="left"> Email: <br><br><input type="email" name="emlemail" placeholder="You@example.com" size="25" required></td></tr>
+            <tr><td width="100%" align="left"> D.O.B:<br><br><input type="Date" name="dtDOB" placeholder="Date_of_Birth" size="25" required></td></tr>
+            <tr><td width="100%" align="left"><h3>Gender</h3>
+                <input type="radio" name="rdGender" value="Male">Male<br>
+                <input type="radio" name="rdGender" value="Female">Female<br>
+                <input type="radio" name="rdGender" value="Others">Others</td>
+           </tr> 
+           <tr>
+            <td width="100%" align="left">Type of Deposit:<br><br>
+                <select name="SlDeposit">
+                <option value="Select_Your_otion">Select Your option</option>
+                <option value="Cheque">Cheque</option> 
+                <option value="Cash">Cash</option>
+                <option value="Debit_Card">Debit Card</option>
+                <option value="Credit_Card">Credit Card</option>
+                <option value="Mobile_Payments">Mobile Payments</option>
+                <option value="Electronic_Bamk_Transfers">Electronic Bamk Transfers</option>
+             </select></td></tr>
+            <tr><td width="100%" align="left"> Telephone:<input type="number" name="nmbPhone" placeholder="Phone_Number" size="25" required></td></tr>
+            <tr><td width="100%" align="left"> City:<br><input type="text" name="txtcity" placeholder="city" size="25" required></td></tr>
+            <tr>
+                <td width="100%" align="left"> Address: <br><br><textarea name="Address" rows="10" cols="30" placeholder="Type_Your_Address_here---" required></textarea>
+                </td> 
+            </tr>
+            <tr><td width="100%" align="center"><h4>Click Me!</h4></td></tr>
+            <tr><td width="100%" align="center" colspan="2" bgcolor="lightgreen"><input type="Submit" name="sbtsubmit" value="Submit" size="35" required></td></tr>
+            <tr><td width="100%" align="center" colspan="2" bgcolor="orange"><input type="reset" name="rstReset" value="Reset" size="35" required></td></tr>
+          </table></form><br>
+          <h3><a href="#topofpage">Go to top</a></h3>
+          <!--Deposit Form is close and Withdrawl Form is open-->
+
+        <form method="post">
+          <table border="0" width="700" height="300" cellspacing="0" cellpadding="4" bgcolor="gray">
+            <th width="100%" align="center" colspan="2" bgcolor="lightblue"><h2>Withdrawl Form</h2></th>
+            <tr><td width="100%" align="center" colspan="2" bgcolor="lightblue" style="color: maroon;"><h3>Course Withdrawl Form</h3></td></tr>
+            <tr>
+                <td width="50%" align="left"> Student's Name: <br><input type="text" name="FntxtName" placeholder="FullName" size="25" required></td>
+                <td width="50%" align="left"> Last Name: <br><input type="text" name="LntxtName" placeholder="LastName" size="25" required></td>
+            </tr>
+            <tr><td width="100%" colspan="2" align="left"> Students ID:<br><input type="text" name="IDtxtStdudent" placeholder="Student_ID" size="25" required></td></tr>
+            <tr>
+                <td width="50%" align="left"> semester:<br><input type="text" name="txtsemester" placeholder="semester" size="25" required></td>
+                <td width="50%" align="left"> year:<br><input type="text" name="txtyear" placeholder="year" size="25" required></td>
+            </tr>
+            <tr><td width="100%" align="left" colspan="2"><h4>Withdrawl from the following courses:*</h4></td></tr>
+            <tr>
+                <td width="50%" align="left"> Course code: <br><input type="number" name="nmbcode" placeholder="coursecode" size="25" required></td>
+                <td width="50%" align="left"> Course Title: <br><input type="text" name="txtCourseTitle" placeholder="Course_Title" size="25" required></td>
+            </tr>
+            <tr>
+                <td width="50%" align="left"> Section Number: <br><input type="number" name="nmbsecNo" placeholder="Section_Number" size="25" required></td>
+                <td width="50%" align="left"> Credits: <br><input type="number" name="nmbCredits" placeholder="Credits" size="25" required></td>
+            </tr>
+            <tr>
+                <td width="50%" align="left"> Instructor's Name: <br><input type="text" name="FntxtName" placeholder="FullName" size="25" required></td>
+                <td width="50%" align="left"> Last Name: <br><input type="text" name="LntxtName" placeholder="LastName" size="25" required></td>
+            </tr>
+            <tr><td width="100%" align="left" colspan="2"><textarea name="Add_More" rows="10" cols="30" placeholder="Add_More" required></textarea></td></tr>
+            <tr><td width="100%" align="left" colspan="2"> Student's Signature:<br>
+            <textarea name="Signature" rows="10" cols="30" placeholder="Student_signature" required></textarea></td></tr>
+            <tr><td width="100%" align="center" colspan="2" bgcolor="lightgreen"><input type="Submit" name="sbtsubmit" value="Submit" size="35" required></td></tr>
+            <tr><td width="100%" align="center" colspan="2" bgcolor="orange"><input type="reset" name="rstReset" value="Reset" size="35" required></td></tr>
+        </table></form><br>
+        <h3><a href="#topofpage">Go to top</a></h3>
+        <!--Withdrawl Form is close and Food Order Form is open-->
+
+        <form method="post">
+        <table border="0" width="700" height="300" cellspacing="0" cellpadding="4" bgcolor="lightblue">
+            <th width="100%" align="center" colspan="2" style="color: purple;"><h2>Food Order Form</h2></th>
+            <tr><td width="100%" align="left" colspan="2"><p><h4>Enter Your Order in the form below and We will Prepare it as fast as we can.</h4></p></td></tr>
+            <tr><td width="100%" align="center" colspan="2"><h3>Your Food Order</h3></td></tr>
+            <tr><td width="100%" align="left" colspan="2">Customer Information:</td></tr>
+            <tr>
+                <td width="50%" align="left"> First Name: <br><input type="text" name="FntxtName" placeholder="FullName" size="25" required></td>
+                <td width="50%" align="left"> Last Name: <br><input type="text" name="LntxtName" placeholder="LastName" size="25" required></td>
+            </tr>
+            <tr>
+                <td width="50%" align="left"> User Name: <br><input type="text" name="FntxtName" placeholder="UserName" size="25" required></td>
+                <td width="50%" align="left"> Email: <br><input type="email" name="emlemail" placeholder="You@example.com" size="25" required></td>
+             </tr>
+             <tr>
+                <td width="50%" align="left"> Address: <br><textarea name="Address" rows="10" cols="30" placeholder="Enter_the_Address" required></textarea></td> 
+                <td width="50%" align="left"> Address: <br><textarea name="Address" rows="10" cols="30" placeholder="Enter_the_Address" required></textarea></td> 
+             </tr>
+             <tr>
+                <td width="50%" align="left"><h4>Address Line 1</h4></td>
+                <td width="50%" align="left"><h4>Address Line 2</h4></td>
+            </tr>
+            <tr><td width="100%" align="left" colspan="2"> Phone Number:<input type="number" name="nmbPhone" placeholder="Phone_Number" size="25" required></td></tr>
+            <tr><td width="100%" align="left" colspan="2">Order Details:</td></tr>
+            <tr><td width="100%" align="left" colspan="2"><h3>What would you like?</h3><br>
+                <input type="radio" name="rdlike" value="Entree">Male<br>
+                <input type="radio" name="rdlike" value="Entree_side">Entree+side<br>
+                <input type="radio" name="rdlike" value="Combo">Combo</td>
+            </tr>
+            <tr>
+              <td width="50%" align="left">Quantity:<br>
+                <select name="SlQuantity">
+                <option value="Select_Your_otion">Select Your option</option>
+                <option value="Quantity1_per_user">Quantity1 per user</option> 
+                <option value="Quantity2_per_user">Quantity2 per user</option>
+                <option value="Default_Quantity">Default Quantity</option>
+            </select></td>
+            <td width="50%" align="left">Diet Type:<br>
+                <select name="SlDietType">
+                <option value="Select_Your_otion">Select Your option</option>
+                <option value="raw_food_diet">raw food diet</option> 
+                <option value="Diabetic_diet">Diabetic diet</option>
+                <option value="low_fat_diet">low fat diet</option>
+                <option value="Regular">Regular</option>
+            </select></td>
+            </tr>
+            <tr>
+                <td width="100%" align="left" colspan="2"><h3>Do you want it delivered to your or will you pick it up?</h3><br>
+                <input type="radio" name="rdpickitup" value="Delivery">Delivery<br>
+                <input type="radio" name="rdpickitup" value="pick-up">Pick Up</td>
+            </tr>
+            <tr>
+                <td width="100%" align="left" colspan="2">Payment Option:<br><br>
+                    <select name="SlPayment">
+                    <option value="Select_Your_otion">Select Your option</option>
+                    <option value="Cheque">Cheque</option> 
+                    <option value="Cash">Cash</option>
+                    <option value="Debit_Card">Debit Card</option>
+                    <option value="Credit_Card">Credit Card</option>
+                    <option value="Mobile_Payments">Mobile Payments</option>
+                    <option value="Electronic_Bamk_Transfers">Electronic Bamk Transfers</option>
+                 </select></td>
+            </tr>
+            <tr><td width="100%" align="left" colspan="2"><textarea name="Add_More" rows="10" cols="30" placeholder="Add_More" required></textarea></td></tr>
+            <tr>
+                <td width="100%" align="left" colspan="2">Special Instructions: <br><br><textarea name="Instructions" rows="10" cols="30" placeholder="Enter_your_message" required></textarea></td>
+            </tr>
+            <tr><td width="100%" align="center" colspan="2" bgcolor="lightgreen"><input type="Submit" name="sbtsubmit" value="Submit" size="35" required></td></tr>
+            <tr><td width="100%" align="center" colspan="2" bgcolor="orange"><input type="reset" name="rstReset" value="Reset" size="35" required></td></tr>
+        </table></form><br>
+        <h3><a href="#topofpage">Go to top</a></h3>
+        <!--Food Order Form is close and Matrimony Form is open-->
+
+        <form method="post">
+        <table border="0" width="700" height="300" cellspacing="0" cellpadding="4" bgcolor="pink">
+        <th width="100%" align="center" colspan="2" style="color: purple;"><h2>Marriage Registration Form</h2></th>
+        <tr>
+            <td width="50%" align="left"> Place Of Marriage: <br><br><input type="text" name="txtplace" placeholder="MarriagePlace" size="25" required></td>
+            <td width="50%" align="left"> Date Of Marriage:<br><br><input type="Date" name="dtDOB" placeholder="Date_of_Marriage" size="25" required></td>
+        </tr>
+        <tr>
+            <td width="50%" align="left"> Certificate Number: <br><br><input type="number" name="nmbCertificateNo" placeholder="Certificate_Number" size="25" required></td>
+            <td width="50%" align="left"> Minister Officiating Marriage: <br><br><input type="text" name="txtMarriage" placeholder="Marriage_Officiating" size="25" required></td>
+        </tr>
+        <tr>
+            <td width="50%" align="left"> Name Of Bridegroom: <br><br><input type="text" name="FntxtName" placeholder="FullName" size="25" required></td>
+            <td width="50%" align="left"> Last Name: <br><br><input type="text" name="LntxtName" placeholder="LastName" size="25" required></td>
+        </tr>
+        <tr>
+            <td width="50%" align="left"> Age:<br><br><input type="number" name="nmbAge" placeholder="Age" size="25" required></td>
+            <td width="50%" align="left"> Occupation:<br><br><input type="text" name="txtOccupation" placeholder="Occupation" size="25" required></td>
+        </tr>
+        <tr>
+            <td width="50%" align="left"> Residence at the time of marriage:<br><br><textarea name="Address" rows="10" cols="30" placeholder="Enter_the_Address" required></textarea></td> 
+            <td width="50%" align="left"> Address: <br><br><textarea name="Address" rows="10" cols="30" placeholder="Enter_the_Address" required></textarea></td> 
+         </tr>
+         <tr>
+            <td width="50%" align="left"><h4>Address Line 1</h4></td>
+            <td width="50%" align="left"><h4>Address Line 2</h4></td>
+        </tr>
+        <tr>
+            <td width="50%" align="left"> City:<br><br><input type="text" name="txtcity" placeholder="city" size="25" required></td>
+            <td width="50%" align="left"> Country: <br><br>
+                <select name="SlCountry">
+                    <option value="Select_Your_otion">Select Your option</option>
+                    <option value="India">India</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="China">China</option>
+                    <option value="America">America</option>
+                    <option value="Malasiya">Malasiya</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Others">Others</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td width="50%" align="left"> Father Name: <br><br><input type="text" name="FntxtName" placeholder="FullName" size="25" required></td>
+            <td width="50%" align="left"> Last Name: <br><br><input type="text" name="LntxtName" placeholder="LastName" size="25" required></td>
+        </tr>
+        <tr>
+            <td width="100%" align="left" colspan="2"> Witness:<br><br><textarea name="Witness" rows="10" cols="30" placeholder="Enter_Witness" required></textarea></td>
+        </tr>
+        <tr>
+            <td width="50%" align="left"> Name Of Bride: <br><br><input type="text" name="FntxtName" placeholder="FullName" size="25" required></td>
+            <td width="50%" align="left"> Last Name: <br><br><input type="text" name="LntxtName" placeholder="LastName" size="25" required></td>
+        </tr>
+        <tr>
+            <td width="50%" align="left"> Age:<br><br><input type="number" name="nmbAge" placeholder="Age" size="25" required></td>
+            <td width="50%" align="left"> Occupation:<br><br><input type="text" name="txtOccupation" placeholder="Occupation" size="25" required></td>
+        </tr>
+        <tr>
+            <td width="50%" align="left"> Residence at the time of marriage:<br><br><textarea name="Address" rows="10" cols="30" placeholder="Enter_the_Address" required></textarea></td> 
+            <td width="50%" align="left"> Address: <br><br><textarea name="Address" rows="10" cols="30" placeholder="Enter_the_Address" required></textarea></td> 
+         </tr>
+         <tr>
+            <td width="50%" align="left"><h4>Address Line 1</h4></td>
+            <td width="50%" align="left"><h4>Address Line 2</h4></td>
+        </tr>
+        <tr>
+            <td width="50%" align="left"> City:<br><br><input type="text" name="txtcity" placeholder="city" size="25" required></td>
+            <td width="50%" align="left"> Country: <br><br>
+                <select name="SlCountry">
+                    <option value="Select_Your_otion">Select Your option</option>
+                    <option value="India">India</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="China">China</option>
+                    <option value="America">America</option>
+                    <option value="Malasiya">Malasiya</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Others">Others</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td width="50%" align="left"> Father Name: <br><br><input type="text" name="FntxtName" placeholder="FullName" size="25" required></td>
+            <td width="50%" align="left"> Last Name: <br><br><input type="text" name="LntxtName" placeholder="LastName" size="25" required></td>
+        </tr>
+        <tr>
+            <td width="100%" align="left" colspan="2"> Witness:<br><br><textarea name="Witness" rows="10" cols="30" placeholder="Enter_Witness" required></textarea></td>
+        </tr>
+        <tr>
+            <td width="50%" align="left"> Certified By: <br><br><input type="text" name="FntxtName" placeholder="FullName" size="25" required></td>
+            <td width="50%" align="left"> Last Name: <br><br><input type="text" name="LntxtName" placeholder="LastName" size="25" required></td>
+        </tr>
+        <tr>
+            <td width="100%" align="left" colspan="2"> Signature:<br><br><textarea name="Signature" rows="10" cols="30" placeholder="Enter_Signature--" required></textarea>
+            </td>
+        </tr>
+        <tr><td width="100%" align="center" colspan="2" bgcolor="lightgreen"><input type="Submit" name="sbtsubmit" value="Send" size="35" required></td></tr>
+        <tr><td width="100%" align="center" colspan="2" bgcolor="orange"><input type="reset" name="rstReset" value="Cancel" size="35" required></td></tr>
+        </table></form><br>
+        <h3><a href="#topofpage">Go to top</a></h3>
+        <!--Matrimony Form is close and Driving License Form is open-->
+
+        <form method="post">
+        <table border="0" width="700" height="300" cellspacing="0" cellpadding="4" bgcolor="lightblue">
+        <th width="100%" align="center" colspan="2" style="color: red;"><h2>Driving License Application</h2></th>
+        <tr>
+            <td width="50%" align="left"> Name Of the applicant: <br><br><input type="text" name="FntxtName" placeholder="FullName" size="25" required></td>
+            <td width="50%" align="left"> Age:<br><br><input type="number" name="nmbAge" placeholder="Age" size="25" required></td>
+        </tr>
+        <tr>
+            <td width="50%" align="left"> D.O.B:<br><input type="Date" name="dtDOB" placeholder="Date_of_Birth" size="25" required></td>
+            <td width="50%" align="left"><h3>Gender</h3>
+                <input type="radio" name="rdGender" value="Male">Male<br>
+                <input type="radio" name="rdGender" value="Female">Female<br>
+                <input type="radio" name="rdGender" value="Others">Others</td>
+          </tr>
+          <tr>
+            <td width="100%" align="left" colspan="2">First Time Applicant: <br>
+                <input type="checkbox" name="chkapplicant" value="Yes" required>Yes<br>
+                <input type="checkbox" name="chkapplicant" value="No" required>No</td>
+          </tr>
+          <tr>
+            <td width="50%" align="left"> Town:<br><br><input type="text" name="txtTown" placeholder="Town" size="25" required></td>
+            <td width="50%" align="left"> City:<br><br><input type="text" name="txtcity" placeholder="city" size="25" required></td>
+          </tr>
+          <tr>
+            <td width="50%" align="left"> Telephone:<input type="number" name="nmbPhone" placeholder="Phone_Number" size="25" required></td>
+            <td width="50%" align="left"><h3>Type Of Driving License:</h3>
+                <input type="radio" name="rdDriving" value="Two_Wheeler">Two Wheeler<br>
+                <input type="radio" name="rdDriving" value="Four_Wheeler">Four Wheeler.</td>
+          </tr>
+          <tr><td width="100%" align="left" colspan="2" bgcolor="white"><h3>Health and Fitness:</h3></td></tr>
+          <tr>
+            <td width="50%" align="left">Do you glases or lenses when driving?<br>
+                <input type="checkbox" name="chklenses_glases" value="Yes" required>Yes<br>
+                <input type="checkbox" name="chklenses_glases" value="No" required>No</td>
+            <td width="50%" align="left">Do you hearing aids?<br>
+                <input type="checkbox" name="chkhearing" value="Yes" required>Yes<br>
+                <input type="checkbox" name="chkhearing" value="No" required>No</td>  
+          </tr>
+          <tr>
+            <td width="100%" align="left" colspan="2">Do you have any physical disabilities that may require <br> special adaptations to be made on the vehicle you might use?<br>
+                <input type="checkbox" name="chkdis_abilities" value="Yes" required>Yes<br>
+                <input type="checkbox" name="chkdis_abilities" value="No" required>No</td>
+          </tr>
+          <tr>
+             <td width="50%" align="left">Do you suffer from any serious disease?<br>
+             <input type="checkbox" name="chkdisease" value="Yes" required>Yes<br>
+             <input type="checkbox" name="chkdisease" value="No" required>No</td>
+             <td width="50%" align="left"> If the above answer is yes kindly specify:<br><br><textarea name="Specify" rows="10" cols="30" placeholder="Enter_Your_suggestion--" required></textarea></td>
+          </tr>
+          <tr>
+            <td width="50%" align="left">Are You any prescription drugs?<br>
+                <input type="checkbox" name="chkprescription" value="Yes" required>Yes<br>
+                <input type="checkbox" name="chkprescription" value="No" required>No</td>
+            <td width="50%" align="left">Have you ever been dependant on alcohol?<br>
+                <input type="checkbox" name="chkalcohol" value="Yes" required>Yes<br>
+                <input type="checkbox" name="chkalcohol" value="No" required>No</td>  
+          </tr>
+          <tr><td width="100%" align="center" colspan="2" bgcolor="lightgreen"><input type="Submit" name="sbtsubmit" value="Submit" size="35" required></td></tr>
+          <tr><td width="100%" align="center" colspan="2" bgcolor="orange"><input type="reset" name="rstReset" value="Cancel" size="35" required></td></tr>
+        </table></form><br>
+        <h3><a href="#topofpage">Go to top</a></h3>
+        <!--Driving License Form is close and Form Types is Over-->
+</body>
+</html>

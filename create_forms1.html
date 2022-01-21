@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Types of html forms</title>
+</head>
+<body>
+    <h3 id="topofpage">Types of html forms</h3>
+    <form method="post">
+        <table border="0" width="700" height="300" cellspacing="0" cellpadding="4" bgcolor="silver">
+        <th width="100%" colspan="2" align="center" bgcolor="lightblue"><h2>Delivery Order Form</h2></th>
+         <tr><td width="100%" align="left" colspan="2"> Deliver To: <br><textarea name="DeliveryTo" rows="10" cols="30" placeholder="Enter_the_message" required></textarea>
+         </td></tr>
+         <tr>
+            <td width="50%" align="left"> Deliver Address: <br><textarea name="DeliveryAddress" rows="10" cols="30" placeholder="Enter_the_Address" required></textarea></td> 
+            <td width="50%" align="left"> Deliver Address: <br><textarea name="DeliveryAddress" rows="10" cols="30" placeholder="Enter_the_Address" required></textarea></td>
+         </tr>
+         <tr>
+             <td width="50%" align="left"><h4>Address line 1</h4></td>
+             <td width="50%" align="left"><h4>Address line 2</h4></td>
+         </tr>
+         <tr>
+              <td width="50%" align="left"> City: <br><input type="text" name="txtcity" placeholder="city" size="25" required></td>
+              <td width="50%" align="left"> Region: <br><input type="text" name="txtRegion" placeholder="Region" size="25" required></td>
+          </tr>
+          <tr>
+            <td width="50%" align="left"> postal/Zipcode: <br><input type="number" name="nmbcode" placeholder="postal_Zipcode" size="25" required></td>
+            <td width="50%" align="left"> Country: <br>
+                <select name="SlCountry">
+                    <option value="Select_Your_otion">Select Your option</option>
+                    <option value="India">India</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="China">China</option>
+                    <option value="America">America</option>
+                    <option value="Malasiya">Malasiya</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Others">Others</option>
+                </select></td>
+            </td>
+          </tr>
+          <tr>
+            <td width="100%" align="left" colspan="2"> Deliver Description: <br><textarea name="DeliveryDescription" rows="10" cols="30" placeholder="Deliver_Description" required></textarea></td>
+         </tr>
+         <tr>
+             <td width="50%" align="left"> Date of Delivery: <br><input type="date" name="dtDate" placeholder="Date_of_Delivery" size="25" required></td>
+             <td width="50%" align="left"> Time of Delivery: <br><input type="time" name="tmTime" placeholder="Time_of_Delivery" size="25" required></td>
+          </tr>
+          <tr>
+            <td width="100%" align="left" colspan="2"> Remarks:<br><textarea name="Remarks" rows="10" cols="35" placeholder="Enter_the_message" required></textarea></td>
+          </tr>
+          <tr>
+            <td width="50%" align="left"> Reciever Name: <br><input type="text" name="txtName" placeholder="FullName" size="25" required></td>
+            <td width="50%" align="left"> Reciever Name: <br><input type="text" name="txtName" placeholder="LastName" size="25" required></td>
+         </tr>
+         <tr>
+            <td width="100%" align="left" colspan="2"> Reciever Phone Number:<br><input type="number" name="nmbPhone" placeholder="Phone_Number" size="25" required></td>
+         </tr>
+         <tr>
+            <td width="100%" align="left" colspan="2"> Reciever Signature:<br>
+             <textarea name="RecieverSign" rows="10" cols="30" placeholder="Signature---" required></textarea></td>
+         </tr>
+         <tr><td width="100%" colspan="2" align="center" bgcolor="lightgreen"><input type="submit" name="sbtsubmit" value="Order" size="20" required></td></tr>
+    </table></form><br>
+    <h3><a href="#topofpage">Go to top</a></h3>
+    <!--Delivery Order Form is close and  Booking Form is open-->
+
+    <form method="post">
+    <table border="0" width="700" height="300" cellspacing="0" cellpadding="4" bgcolor="lightgrey">
+        <th width="100%" colspan="3" align="center" bgcolor="lightblue"><h2>Booking Form</h2></th>
+        <tr><td width="100%" align="center" colspan="3"><h3>Flight Reservation Form</h3></td></tr>
+        <tr><td width="100%" align="left" colspan="3"><input type="date" name="dtDate" size="30" required></td></tr>
+        <tr><td width="100%" align="left"  colspan="3">Passenger Name</td></tr>
+        <tr>
+            <td width="33%" align="left"> Title:<br>
+                <select name="SlTitle">
+                <option value="Mr">Mr</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Others">Others</option>
+            </select></td>
+            <td width="33%" align="left"> Full Name: <br><input type="text" name="txtName" placeholder="FullName" size="25" required></td>
+            <td width="33%" align="left"> Last Name: <br><input type="text" name="txtName" placeholder="LastName" size="25" required></td>
+        </tr>
+        <tr><td width="100%" align="left" colspan="3"> Date of Birth: <br><input type="date" name="dtDate" placeholder="Date_of_Birth:" size="25" required></td></tr>
+        <tr><td width="100%" align="left"  colspan="3">Contact Person</td></tr>
+        <tr>
+            <td width="33%" align="left"> Title:<br>
+             <select name="SlTitle">
+             <option value="Mr">Mr</option>
+             <option value="Mrs">Mrs</option>
+             <option value="Others">Others</option>
+         </select></td>
+         <td width="33%" align="left"> Full Name: <br><input type="text" name="txtName" placeholder="FullName" size="25" required></td>
+         <td width="33%" align="left"> Last Name: <br><input type="text" name="txtName" placeholder="LastName" size="25" required></td>
+      </tr>
+      <tr>
+          <td width="50%" align="left">Email: <br><input type="email" name="emlemail" size="25" placeholder="Email" required></td>
+          <td width="50%" align="left" colspan="2"> Phone Number: <br><input type="number" name="nmbPhone" size="25" placeholder="Phone_Number" value="+91" required></td>
+     </tr>
+     <tr>
+        <td width="50%" align="left"> Address: <br><textarea name="Address" rows="10" cols="30" placeholder="Enter_the_Address" required></textarea></td> 
+        <td width="50%" align="left" colspan="2"> Address: <br><textarea name="Address" rows="10" cols="30" placeholder="Enter_the_Address" required></textarea></td>
+     </tr>
+     <tr>
+        <td width="50%" align="left"><h5>Address line 1</h5></td>
+        <td width="50%" align="left" colspan="2"><h5>Address line 2</h5></td>
+    </tr>
+    <tr>
+        <td width="50%" align="left"> City: <br><input type="text" name="txtcity" placeholder="city" size="25" required></td>
+        <td width="50%" align="left" colspan="2"> Region: <br><input type="text" name="txtRegion" placeholder="Region" size="25" required></td>
+    </tr>
+    <tr>
+        <td width="50%" align="left"> postal/Zipcode: <br><input type="number" name="nmbcode" placeholder="postal_Zipcode" size="25" required></td>
+        <td width="50%" align="left" colspan="2"> Country: <br>
+            <select name="SlCountry">
+                <option value="Select_Your_otion">Select Your option</option>
+                <option value="India">India</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="China">China</option>
+                <option value="America">America</option>
+                <option value="Malasiya">Malasiya</option>
+                <option value="Japan">Japan</option>
+                <option value="Others">Others</option>
+            </select></td>
+    </td></tr>
+    <tr>
+        <td width="50%" align="left"> Departure Date: <br><input type="date" name="dtDate" placeholder="Departure_Date" size="25" required></td>
+        <td width="50%" align="left" colspan="2"> Departure Time: <br><input type="time" name="tmTime" placeholder="Departure_Time" size="25" required></td>
+    </tr>
+    <tr>
+        <td width="50%" align="left"> Return Date: <br><input type="date" name="dtDate" placeholder="Return_Date" size="25" required></td>
+        <td width="50%" align="left" colspan="2"> Return Time: <br><input type="time" name="tmTime" placeholder="Return_Time" size="25" required></td>
+     </tr>
+     <tr><td width="100%" align="left" colspan="3">Departing From</td></tr>
+     <tr>
+        <td width="50%" align="left"> City: <br><input type="text" name="txtcity" placeholder="city" size="25" required></td>
+        <td width="50%" align="left" colspan="2"> Country: <br>
+            <select name="SlCountry">
+                <option value="Select_Your_otion">Select Your option</option>
+                <option value="India">India</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="China">China</option>
+                <option value="America">America</option>
+                <option value="Malasiya">Malasiya</option>
+                <option value="Japan">Japan</option>
+                <option value="Others">Others</option>
+            </select></td>
+     </tr>
+     <tr><td width="100%" align="left" colspan="3">Designation</td></tr>
+     <tr>
+        <td width="50%" align="left"> City: <br><input type="text" name="txtcity" placeholder="city" size="25" required></td>
+        <td width="50%" align="left" colspan="2"> Country: <br>
+            <select name="SlCountry">
+                <option value="Select_Your_otion">Select Your option</option>
+                <option value="India">India</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="China">China</option>
+                <option value="America">America</option>
+                <option value="Malasiya">Malasiya</option>
+                <option value="Japan">Japan</option>
+                <option value="Others">Others</option>
+            </select></td>
+     </tr>
+     <tr>
+        <td width="50%" align="left"> Airline: <br>
+            <select name="SlAirline">
+                <option value="Select_Your_otion">Select Your option</option>
+                <option value="Air_India">Air India</option>
+                <option value="Indigo">Indigo</option>
+                <option value="Spice_Jet">Spice Jet</option>
+                <option value="Air_India_Express">Air India Express</option>
+                <option value="Vistara">Vistara</option>
+                <option value="Jet_Lite">Jet Lite</option>
+            </select></td>
+            <td width="50%" align="left" colspan="2"> Fare: <br>
+                <select name="SlFare">
+                    <option value="Select_Your_otion">Select Your option</option>
+                    <option value="Basic">Basic</option>
+                    <option value="Standard">Standard</option>
+                    <option value="Flexible">Flexible</option>
+                    <option value="Freedom">Freedom</option>
+                </select></td>
+        </tr>
+        <tr><td width="100%" colspan="3" align="center" bgcolor="green"><input type="submit" name="sbtsubmit" value="Reserve_Flight" size="20" required></td></tr>
+    </table></form><br>
+    <h3><a href="#topofpage">Go to top</a></h3>
+    <!--Booking Order Form is close and  Iternary Form is open-->
+
+    <form method="post">
+        <table border="0" width="700" height="300" cellspacing="0" cellpadding="4" bgcolor="gray">
+        <th width="100%" colspan="3" align="center" bgcolor="lightgreen"><h2>Iternary Form</h2></th>
+        <tr><td width="100%" align="left" colspan="3" style="color: coral;"><h3>Travel Iternary</h3></td></tr>
+        <tr><td width="100%" colspan="3" align="left"><h4> <u>Flight/Train/Rental/Hotel/Event </u></h4></td></tr>
+        <tr>
+            <td width="50%" align="left"> Prepared For: <br><input type="text" name="txtPrepared" size="25" placeholder="prepared_For" required></td>
+            <td width="50%" align="left" colspan="2"> Event or Purpose: <br><input type="text" name="txtPurpose" size="25" placeholder="purpose" required></td>
+        </tr>
+        <tr><td width="100%" align="left" colspan="3"><h4>Travel Dates:</h4></td></tr>
+        <tr>
+            <td width="50%" align="left"> Departing: <br><input type="Date" name="dtDate" size="25" required></td>
+            <td width="50%" align="left" colspan="2"> Returning: <br><input type="date" name="dtDate" size="25" required></td>
+        </tr>
+        <tr>
+            <td width="100%" align="left" colspan="3"> Notes: <br><textarea name="Notes" rows="10" cols="30" placeholder="Enter_Notes"></textarea></td>
+        </tr>
+        <tr><td width="100%" align="left" colspan="3" style="color: coral;"><h3>Leg-1</h3></td></tr>
+        <tr>
+            <td width="33%" align="left"> Departing From: <br><input type="Date" name="dtDate" size="25" required></td>
+            <td width="33%" align="left"> To: <br><input type="date" name="dtDate" size="25" required></td>
+            <td width="33%" align="left"> Flight#/Train#:<br><input type="text" name="txttravel" size="25" placeholder="travel_option" required></td>
+        </tr>
+         <tr>
+            <td width="50%" align="left"> Airline or Carier: <br><input type="text" name="txtAirline" size="25" placeholder="choose_option" required></td>
+            <td width="50%" align="left" colspan="2"> Gate and or Terminal: <br><input type="text" name="txtoption" size="25" placeholder="choose_option" required></td>
+        </tr>
+        <tr>
+            <td width="33%" align="left"> Check-in Time: <br><input type="time" name="tmTime" size="25" required></td>
+            <td width="33%" align="left"> Depart time: <br><input type="time" name="tmTime" size="25" required></td>
+            <td width="33%" align="left"> Arrival time: <br><input type="time" name="tmTime" size="25" required></td>
+        </tr>
+        <tr><td width="100%" align="left" colspan="3"><h3><i>Transfer:</i></h3>
+            <select name="SlTransfer">
+            <option value="Select_Your_otion">Select Your option</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select></td></tr>
+         <tr><td width="100%" align="left" colspan="3" style="color: coral;"><h3>Leg-2</h3></td></tr>
+         <tr>
+             <td width="33%" align="left"> Departing From: <br><input type="Date" name="dtDate" size="25" required></td>
+             <td width="33%" align="left"> To: <br><input type="text" name="dtDate" size="25" required></td>
+             <td width="33%" align="left"> Flight#/Train#:<br><input type="text" name="txttravel" size="25" placeholder="travel_option" required></td>
+         </tr>
+          <tr>
+             <td width="50%" align="left"> Airline or Carier: <br><input type="text" name="txtAirline" size="25" placeholder="choose_option" required></td>
+             <td width="50%" align="left" colspan="2"> Gate and or Terminal: <br><input type="text" name="txtoption" size="25" placeholder="choose_option" required></td>
+         </tr>
+         <tr>
+             <td width="33%" align="left"> Check-in Time: <br><input type="time" name="tmTime" size="25" required></td>
+             <td width="33%" align="left"> Depart time: <br><input type="time" name="tmTime" size="25" required></td>
+             <td width="33%" align="left"> Arrival time: <br><input type="time" name="tmTime" size="25" required></td>
+         </tr>
+         <tr><td width="100%" align="left" colspan="3"><h3><i>Transfer:</i></h3>
+             <select name="SlTransfer">
+             <option value="Select_Your_otion">Select Your option</option>
+             <option value="Yes">Yes</option>
+             <option value="No">No</option>
+           </select></td></tr>
+            <tr><td width="100%" align="left" colspan="3" style="color: coral;"><h3>Leg-3</h3></td></tr>
+         <tr>
+             <td width="33%" align="left"> Departing From: <br><input type="Date" name="dtDate" size="25" required></td>
+             <td width="33%" align="left"> To: <br><input type="text" name="dtDate" size="25" required></td>
+             <td width="33%" align="left"> Flight#/Train#:<br><input type="text" name="txttravel" size="25" placeholder="travel_option" required></td>
+         </tr>
+         <tr>
+             <td width="50%" align="left"> Airline or Carier: <br><input type="text" name="txtAirline" size="25" placeholder="choose_option" required></td>
+             <td width="50%" align="left" colspan="2"> Gate and or Terminal: <br><input type="text" name="txtoption" size="25" placeholder="choose_option" required></td>
+         </tr>
+         <tr>
+             <td width="33%" align="left"> Check-in Time: <br><input type="time" name="tmTime" size="25" required></td>
+             <td width="33%" align="left"> Depart time: <br><input type="time" name="tmTime" size="25" required></td>
+             <td width="33%" align="left"> Arrival time: <br><input type="time" name="tmTime" size="25" required></td>
+         </tr>
+         <tr><td width="100%" align="left" colspan="3"><h3><i>Transfer:</i></h3>
+             <select name="SlTransfer">
+             <option value="Select_Your_otion">Select Your option</option>
+             <option value="Yes">Yes</option>
+             <option value="No">No</option>
+           </select></td></tr>
+        <tr><td width="100%" colspan="3" align="left"><h4> <u>Vehicle Rental: </u></h4></td></tr>
+        <tr>
+            <td width="33%" align="left"> Rental Company: <br><input type="text" name="txtRental" size="25" placeholder="Rental_Company" required></td>
+            <td width="33%" align="left"> Class or Model: <br><input type="text" name="txtoption" placeholder="Class_or_Model" size="25" required></td>
+            <td width="33%" align="left"> Reservation#: <br><input type="text" name="txtReserve" placeholder="Reservation" size="25" required></td>
+        </tr>
+         <tr>
+            <td width="50%" align="left"> Pick-up Date<br><input type="Date" name="dtDate" size="25" required></td>
+            <td width="50%" align="left" colspan="2"> Time: <br><input type="time" name="tmTime" size="25" required></td>
+         </tr>
+         <tr>
+            <td width="50%" align="left"> Drop-of Date<br><input type="Date" name="dtDate" size="25" required></td>
+            <td width="50%" align="left" colspan="2"> Time: <br><input type="time" name="tmTime" size="25" required></td>
+         </tr>
+         <tr>
+            <td width="33%" align="left"> Beginning Mileage:<br><input type="text" name="txtMileage" size="25" placeholder="Beginning_Mileage" required></td>
+            <td width="33%" align="left"> Ending Mileage:<br><input type="text" name="txtMileage" placeholder="Ending_Mileage" size="25" required></td>
+            <td width="33%" align="left"> Fuel Expense $$:<br><input type="number" name="nmbFuel" placeholder="Fuel_Expense" size="25" required></td>
+        </tr><hr>
+        <tr><td width="100%" align="left" colspan="3"><h3><u>Hotel/Accommodation:</u></h3></td></tr>
+        <tr>
+            <td width="33%" align="left"> Hotel Name:<br><input type="text" name="txtName" size="25" placeholder="Hotel_Name" required></td>
+            <td width="33%" align="left"> Hotel Address: <br><textarea name="Address" rows="10" cols="30" placeholder="Enter_the_Address" required></textarea></td> 
+            <td width="33%" align="left" colspan="2"> Phone Number#: <br><input type="number" name="nmbPhone" size="25" placeholder="Phone_Number" value="+91" required></td>
+        </tr>
+        <tr><td width="100%" align="left" colspan="3"> Reservation Number: <br><input type="number" name="nmbReservation" size="25" placeholder="Reservation_Number" required></td></tr>
+        <tr>
+            <td width="50%" align="left"> Check-in date:<br><input type="date" name="dtDate" size="25" required></td>
+            <td width="50%" align="left" colspan="2">#Of Nights:<br><input type="time" name="tmTime" size="25" required></td>
+        </tr>
+        <tr>
+            <td width="50%" align="left"> Check-out date:<br><input type="date" name="dtDate" size="25" required></td>
+            <td width="50%" align="left" colspan="2">Time:<br><input type="time" name="tmTime" size="25" required></td>
+        </tr>
+        <tr><td width="100%" align="center" colspan="3" bgcolor="orange"><input type="Submit" name="sbtsubmit" value="Submit" size="25" required></td></tr>
+    </table></form><br>
+    <h3><a href="#topofpage">Go to top</a></h3>
+    <!--Iternary Order Form is close and Resignation Form is open-->
+
+    <form method="post">
+    <table border="0" width="700" height="300" cellspacing="0" cellpadding="4" bgcolor="pink">
+        <th width="100%" colspan="2" align="center" bgcolor="lightgreen"><h2>Resignation Form</h2></th>
+         <tr><td width="100%" align="left" colspan="2"><h3>Employee Resignation Form</h3></td></tr>
+         <tr><td width="100%" align="left" colspan="2"><h3><p>We're sad to see you go! Before you leave. Please fill out this form. We appropriate your feedback.</p></h3>
+         </td></tr>
+         <tr>
+            <td width="50%" align="left"> Name:*<br><input type="text" name="txtName" placeholder="FullName" size="25" required></td>
+            <td width="50%" align="left">  <br><input type="text" name="txtName" placeholder="LastName" size="25" required></td>
+         </tr>
+         <tr>
+            <td width="50%" align="left"><h5>FirstName</h5></td>
+            <td width="50%" align="left"><h5>LastName</h5></td>
+         </tr>
+         <tr><td width="100%" align="left" colspan="2"> When is your last day with us?<br><input type="datetime" name="dtDate" size="25" required></td></tr>
+         <tr><td width="100%" align="left" colspan="2">Please Enter the Date</td></tr>
+     <tr>
+        <td width="100%" align="left" colspan="2" style="color: darkgreen;"> please Rate your experience with our Company:* <br>
+        <input type="radio" name="rdGender" value="Poor">Poor <br>
+        <input type="radio" name="rdGender" value="Medium">Medium <br>
+        <input type="radio" name="rdGender" value="Great">Great <br>
+        <input type="radio" name="rdGender" value="Normal">normal <br></td>
+     </tr>
+    <tr>
+        <td width="100%" align="left" colspan="2">what have you learned in your time here?* <br><textarea name="learned_Here" rows="10" cols="30" placeholder="learned_in_yourTimeHere" required></textarea></td>
+    </tr>
+    <tr><td width="100%" align="left" colspan="2">Signature:<input type="text" name="txtSignature" placeholder="Signature" size="40" required></td></tr>
+    <tr><td width="100%" align="center" colspan="2" bgcolor="blue"><input type="Submit" name="sbtsubmit" value="Submit" size="25" required></td></tr>
+</table></form><br>
+<h3><a href="#topofpage">Go to top</a></h3>
+<!--Resignation Form is close and Appoinment Form is open-->
+
+<form method="post">
+<table border="0" width="700" height="300" cellspacing="0" cellpadding="4" bgcolor="lightgrey">
+    <th width="100%" colspan="3" align="center" bgcolor="lightgreen"><h2>Appoinment Form</h2></th>
+    <tr><td width="100%" align="center" colspan="3" bgcolor="lightgreen" style="color: darkred;"><h3>Doctor Appoinment Form</h3></td></tr>
+    <tr><td width="100%" align="center" colspan="3" bgcolor="gray"><h3>Patient Information</h3></td></tr>
+    <tr>
+        <td width="33%" align="left"> First Name: <br><input type="text" name="txtName" placeholder="FullName" size="25" required></td>
+        <td width="33%" align="left"> Middle Initial: <br><input type="text" name="txtName" placeholder="MiddleInitial" size="25" required></td>
+        <td width="33%" align="left"> Last Name: <br><input type="text" name="txtName" placeholder="LastName" size="25" required></td>
+     </tr>
+     <tr>
+        <td width="33%" align="left"> Date Of Birth: <br><input type="Date" name="dtDate" placeholder="Date_of_Birth" size="25" required></td>
+        <td width="33%" align="left"> Date and Time: <br><input type="datetime" name="dtdatetime" placeholder="datetime" size="25" required></td>
+        <td width="33%" align="left"> Phone Number: <br><input type="number" name="nmbPhone" placeholder="Phone_Number" size="25" required></td>
+     </tr>
+     <tr>
+         <td width="100%" align="left" colspan="3">Is this your first visit to our office? <br>
+            <input type="radio" name="rdfirstvisit" value="Yes">Yes<br>
+            <input type="radio" name="rdfirstvisit" value="No">No<br>
+        </td>
+     </tr>
+     <tr><td width="100%" align="center" colspan="3" bgcolor="gray"><h3>Doctor Information</h3></td></tr>
+     <tr>
+        <td width="50%" align="left"> Date:<br><input type="Date" name="dtDate" placeholder="Date" size="25" required></td>
+        <td width="50%" align="left" colspan="2"> Time: <br><input type="time" name="tmtime" placeholder="time" size="25" required></td>
+     </tr>
+     <tr>
+         <td width="100%" align="left" colspan="3">Preferred Physician:<br>
+            <input type="radio" name="rdphysician" value="DrAnderson">Dr.Anderson
+            <input type="radio" name="rdphysician" value="DrPatel">Dr.Patel<br>
+            <input type="radio" name="rdphysician" value="DrJones">Dr.Jones
+            <input type="radio" name="rdphysician" value="DrSmith">Dr.Smith<br>
+            <input type="radio" name="rdphysician" value="NoPreference">No Preference<br>
+        </td>
+     </tr>
+     <tr><td width="100%" align="center" colspan="3" bgcolor="lightblue"><input type="Submit" name="sbtsubmit" value="Submit" size="25" required></td></tr>
+    </table></form><br>
+    <h3><a href="#topofpage">Go to top</a></h3>
+    <!--Appoinment Form is close and Cancellation Form is open-->
+
+    <form method="post">
+        <table border="0" width="700" height="300" cellspacing="0" cellpadding="4" bgcolor="lightblue">
+        <th width="100%" colspan="2" align="center" bgcolor="lightgreen"><h2>Cancellation Form</h2></th>
+        <tr><td width="100%" align="center" colspan="2" bgcolor="orange"><h3>Order Cancellation Form</h3></td></tr>
+         <tr><td width="100%" align="left" colspan="2"> Order Number/Transaction ID: <br><input type="number" name="nmbOrderNumber" placeholder="Order_Number" size="25" required></td></tr>
+         <tr>
+            <td width="50%" align="left"> First Name: <br><input type="text" name="FntxtName" placeholder="FullName" size="25" required></td>
+            <td width="50%" align="left"> Last Name: <br><input type="text" name="LntxtName" placeholder="LastName" size="25" required></td>
+         </tr>
+         <tr>
+             <td width="50%" align="left">Email: <br><input type="email" name="emlemail" size="25" placeholder="Email" required></td>
+             <td width="50%" align="left"> Phone Number: <br><input type="number" name="nmbPhone" placeholder="Phone_Number" size="25" required></td>
+         </tr>
+         <tr>
+            <td width="50%" align="left"> Date Of Original Purchase:<br><input type="Date" name="dtDate" placeholder="Date_of_Purchase" size="25" required></td>
+            <td width="50%" align="left"> Order Total: <br><input type="number" name="nmbOrderTotal" placeholder="Order_Total" size="25" required></td>
+         </tr>
+         <tr>
+            <td width="50%" align="left">
+                 Address: <br><textarea name="Address" rows="10" cols="30" placeholder="Enter_Your_Address" required></textarea></td>
+            <td width="50%" align="left">
+                Reason For Cancellation:<br><textarea name="Address" rows="10" cols="30" placeholder="Enter_Your_Address" required></textarea></td>
+          </tr>
+          <tr>
+             <td width="100%" align="left" colspan="2" bgcolor="pink">
+             <input type="checkbox" value="Iam_not_a_robot" required>I am not a Robot.</td>
+          </tr>
+          <tr><td width="100%" align="center" colspan="3" bgcolor="lightblue"><input type="Submit" name="sbtsubmit" value="Cancel_Order" size="25" required></td></tr>
+          <tr><td width="100%" align="center" colspan="3" bgcolor="lightgreen"><input type="reset" name="sbtsubmit" value="Reset" size="25" required></td></tr>
+    </table></form><br>
+    <h3><a href="#topofpage">Go to top</a></h3>
+    <!--Cancellation Form is close and Donation Form is open-->
+
+    <form method="post">
+    <table border="0" width="700" height="300" cellspacing="0" cellpadding="4" bgcolor="pink">
+        <th width="100%" colspan="2" align="center" bgcolor="lightgreen"><h2>Donation Form</h2></th>
+        <tr><td width="100%" align="center" colspan="2" bgcolor="lightgreen" style="color: darkred;"><h3>Donation Receipt Form</h3></td></tr>
+        <tr>
+            <td width="50%" align="left"> Charity Name: <br><input type="text" name="FntxtName" placeholder="FullName" size="25" required></td>
+            <td width="50%" align="left"> Charity Registration: <br><input type="text" name="LntxtName" placeholder="Charity_Registration" size="25" required></td>
+        </tr>
+        <tr>
+            <td width="50%" align="left"> Payment Date:<br><input type="Date" name="dtDate" placeholder="Date_of_Payment" size="25" required></td>
+            <td width="50%" align="left"> Amount Paid: <br><input type="number" name="nmbPaid" placeholder="Amount_Paid" size="25" required></td>
+        </tr>
+        <tr>
+            <td width="100%" align="left" colspan="2">Payment Method:<br>
+               <input type="radio" name="rdpayment_method" value="Cash">Cash<br>
+               <input type="radio" name="rdpayment_method" value="Money_Order">Money Order<br>
+               <input type="radio" name="rdpayment_method" value="Cheque">Cheque<br>
+        </td></tr>
+        <tr><td width="100%" align="center" colspan="2"><h3>Received By</h3></td></tr>
+        <tr>
+            <td width="50%" align="left"> First Name: <br><input type="text" name="FntxtName" placeholder="FullName" size="25" required></td>
+            <td width="50%" align="left"> Last Name: <br><input type="text" name="LntxtName" placeholder="LastName" size="25" required></td>
+         </tr>
+         <tr><td width="100%" align="center" colspan="2"><h3>Donation By</h3></td></tr>
+         <tr>
+            <td width="50%" align="left"> First Name: <br><input type="text" name="FntxtName" placeholder="FullName" size="25" required></td>
+            <td width="50%" align="left"> Last Name: <br><input type="text" name="LntxtName" placeholder="LastName" size="25" required></td>
+         </tr>
+         <tr><td width="100%" align="left" colspan="2"> Local Issued:<br><input type="text" name="txtissued" placeholder="Local_Issued" size="25" required></td></tr>
+         <tr>
+            <td width="50%" align="left">Donor Email: <br><input type="email" name="emlemail" size="25" placeholder="Email" required></td>
+            <td width="50%" align="left">Donor Phone Number: <br><input type="number" name="nmbPhone" placeholder="Phone_Number" size="25" required></td>
+        </tr>
+         <tr>
+            <td width="50%" align="left"> Address: <br><textarea name="Address" rows="10" cols="30" placeholder="Enter_the_Address" required></textarea></td> 
+            <td width="50%" align="left"> Address: <br><textarea name="Address" rows="10" cols="30" placeholder="Enter_the_Address" required></textarea></td> 
+         </tr>
+         <tr>
+             <td width="50%" align="left"><h5>Address Line 1</h5></td>
+             <td width="50%" align="left"><h5>Address Line 2</h5></td>
+         </tr>
+         <tr>
+            <td width="50%" align="left"> City: <br><input type="text" name="txtcity" placeholder="city" size="25" required></td>
+            <td width="50%" align="left"> Region: <br><input type="text" name="txtRegion" placeholder="Region" size="25" required></td>
+         </tr>
+         <tr>
+            <td width="50%" align="left"> postal/Zipcode: <br><input type="number" name="nmbcode" placeholder="postal_Zipcode" size="25" required></td>
+            <td width="50%" align="left"> Country: <br>
+                <select name="SlCountry">
+                    <option value="Select_Your_otion">Select Your option</option>
+                    <option value="India">India</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="China">China</option>
+                    <option value="America">America</option>
+                    <option value="Malasiya">Malasiya</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Others">Others</option>
+                </select></td>
+          </tr>
+          <tr>
+            <td width="100%" align="left" colspan="2"> Notes: <br><textarea name="Notes" rows="10" cols="30" placeholder="Enter_Notes" required></textarea></td> 
+          </tr>
+          <tr><td width="100%" align="center" colspan="2" bgcolor="lightblue"><input type="Submit" name="sbtsubmit" value="Send" size="25" required></td></tr>
+          <tr><td width="100%" align="center" colspan="2" bgcolor="lightgreen"><input type="reset" name="sbtsubmit" value="Cancel" size="25" required></td></tr>
+    </table></form><br>
+    <h3><a href="#topofpage">Go to top</a></h3>
+    <!--Donation Form is close and Billing Form is open-->
+
+    <form method="post">
+    <table border="0" width="700" height="300" cellspacing="0" cellpadding="4" bgcolor="lightgrey">
+        <th width="100%" colspan="2" align="center" bgcolor="lightblue"><h2>Billing Form</h2></th>
+        <tr><td width="100%" align="left" colspan="2" bgcolor="lightgreen" style="color: darkred;"><h3>Pay with your credit Card</h3></td></tr>
+        <tr>
+            <td width="100%" align="center" colspan="2" style="color: darkred;"><h3>Your Payment Information</h3> <br>Use the shipping address as billing address:</td>
+        </tr>
+        <tr>
+            <td width="50%" align="left"> First Name: <br><input type="text" name="FntxtName" placeholder="FullName" size="25" required></td>
+            <td width="50%" align="left"> Last Name: <br><input type="text" name="LntxtName" placeholder="LastName" size="25" required></td>
+         </tr>
+         <tr>
+            <td width="50%" align="left">Card Number: <br><input type="password" name="pwdCard_Number" placeholder="Card_Holder_Number" size="25" minlength="12" required></td> 
+            <td width="50%" align="left">Card Verification Number: <br><input type="password" name="pwdverification" placeholder="Card_Verification_Number" size="25" minlength="5" required></td>
+         </tr>
+         <tr>
+            <td width="50%" align="left"> Expiration Date:<br><input type="Date" name="dtDate" placeholder="Date_of_Expiry" size="25" required></td>
+            <td width="50%" align="left">Email: <br><input type="email" name="emlemail" size="25" placeholder="Email" required></td>
+         </tr>
+         <tr>
+            <td width="100%" align="center" colspan="2" style="color: darkred;"><h3>Your Billing Information</h3> <br>Use the shipping address as billing address:</td>
+         </tr>
+         <tr>
+            <td width="50%" align="left"> Address: <br><textarea name="Address" rows="10" cols="30" placeholder="Enter_the_Address" required></textarea></td> 
+            <td width="50%" align="left"> Address: <br><textarea name="Address" rows="10" cols="30" placeholder="Enter_the_Address" required></textarea></td> 
+         </tr>
+         <tr>
+            <td width="50%" align="left"><h5>Address Line 1</h5></td>
+            <td width="50%" align="left"><h5>Address Line 2</h5></td>
+        </tr>
+        <tr>
+            <td width="50%" align="left"> City: <br><input type="text" name="txtcity" placeholder="city" size="25" required></td>
+            <td width="50%" align="left"> postal/Zipcode: <br><input type="number" name="nmbcode" placeholder="postal_Zipcode" size="25" required></td>
+        </tr>
+        <tr>
+            <td width="50%" align="left"> Country: <br>
+                <select name="SlCountry">
+                    <option value="Select_Your_otion">Select Your option</option>
+                    <option value="India">India</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="China">China</option>
+                    <option value="America">America</option>
+                    <option value="Malasiya">Malasiya</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Others">Others</option>
+                </select></td>
+                <td width="50%" align="left">State:<br>
+                    <select name="SlState">
+                    <option value="Select_Your_otion">Select Your option</option>
+                    <option value="TamilNadu">TamilNadu</option>
+                    <option value="Andhra_Pradesh">Andhra Pradesh</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya_Pradesh">Madhya Pradesh</option>
+                    <option value="Karnataka">Karnataka</option>
+            </select></td></tr>
+          <tr>
+            <td width="100%" align="left" colspan="2">Phone Number:<input type="number" name="nmbPhone" placeholder="Phone_Number" minlength="10" size="25" required></td>
+          </tr>
+          <tr>
+              <td width="50%" align="center" bgcolor="lightblue"><input type="Submit" name="sbtsubmit" value="Pay_Now" size="35" required></td>
+              <td width="50%" align="left" bgcolor="orange"> <input type="image" src="./button_images/download.png"></td>
+         </tr>
+        </table></form><br>
+        <h3><a href="#topofpage">Go to top</a></h3>
+        <!--Billing Form is close and Check in/Check out Form is opened new Page-->
+</body>
+</html>
